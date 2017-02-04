@@ -1,0 +1,62 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" id="viewport" content="width=device-width,user-scalable=no">
+<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+<!--Author: Van Jan 2017-->
+<title>Email Signature</title>
+</head>
+
+<body>
+	<main>
+		<div class="column-action"><!--begin column-action-->
+			<div class="input">
+
+				<form id="user_id_form">
+					<p><label for="full-name">Full Name:</label><INPUT type="text" size="20" id="full-name" name="full-name" placeholder="Enter your full name" /><br>
+						<label for="title">Title:</label><input type="text" rows="20" name="title" id="title" placeholder="Your Title" /><br>
+						<label for="email">Email:</label><input type="text" rows="20" name="email" id="email" placeholder="Enter your email" /><br>
+						<label for="phone">Phone:</label><input type="text" rows="20" name="phone" id="phone" placeholder="Enter your number" /><br></p>
+						<label></label><input type="button" name="get_sig" value="Generate" class="user_button" onclick="generateSig();">
+					</p>
+				</form>
+
+			</div>
+
+			<div id="output" name="output">
+				<table style="margin-top:30px;margin-bottom:30px;width:95%" border="0" id="code">
+					<tbody><tr height="45">
+						<td>
+							<p><span style="font-family:Arial, Helvetica, sans-serif; font-size:13px;color:#666666;"><b class="employee-name">First Last</b> | <span style="font-size:12px;margin-bottom:25px;" class="employee-title">You're a Super Star</span></span><br>
+								<br>
+								<img src="http://www.yourdomain.com/images/your_logo.png" alt="" width="102" height="51"><br>
+								<br>
+								<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666;">&nbsp;123 Main St.<br>&nbsp;Fremont, CA 12345</span><br>
+								<br>
+								<!--email -->
+								<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; text-decoration:none!important;"><strong>&nbsp;e:</strong></span>
+								<a style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666 !important; text-decoration:none!important;"><font style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666 !important; text-decoration:none!important;" class="employee-mail">your-email@yourdomain.com</font></a><br>
+								<!--phone -->
+								<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;">&nbsp;<strong>ph:</strong> </span>
+								<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666;" class='employee-number'>xxx.xxx.xxxx</span><br>
+								<!--website -->
+								<span style="font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#000000;"><b><a href="http://www.yourdomain.com" style="color:#000000; text-decoration:none!important;">&nbsp;www.yourdomain.com</a></b></span><br>
+								<em aria-hidden="true"><br>
+									&nbsp;<a href="https://www.something.com/" target="new"><img src="http://www.yourdomain.com/images/facebook-256.png" width="16" height="16"></a>  
+									<a href="https://www.linkedin.com/yourdomain/" target="new">
+
+										<img style="padding-left:6px" src="http://www.yourdomain.com/images/linkedin-128.png" width="16" height="16"></a><br>
+									</em>
+							</p><em aria-hidden="true"></em></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<input id="js-copy" class="btn" type="button" value="Copy"  data-clipboard-target="#code">
+		</div><!--end column-action-->
+		
+	</main>
+</body>
+<script src="js/clipboard.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script></html>

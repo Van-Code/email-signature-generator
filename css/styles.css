@@ -1,0 +1,40 @@
+body{
+	padding:10px;
+	background-color:#fff;
+}
+.form-wrapper{
+	font-family:Helvetica, sans-serif;
+	font-size:16px;
+}
+ header{
+ 	font-family:Helvetica, sans-serif;
+ }
+label{
+	width: 120px;
+	display:inline-block;
+	text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+button{
+	margin-top:100px;
+	background:transparent;
+	border:0;
+	cursor:pointer;
+}
+#user_id_form{
+	border-bottom:1px solid #52717c;
+}
+.copy-btn{
+	width: 20px;
+}
+.column-action{
+	display:inline-block;
+	vertical-align: top;
+}
+.column-action{
+	width:20em;
+	border:1px solid #52717c;
+	padding:15px;
+}
